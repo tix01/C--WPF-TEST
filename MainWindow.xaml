@@ -1,0 +1,14 @@
+﻿<Window x:Class="prot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Filese generation" HorizontalAlignment="Left" Margin="126,88,0,0" VerticalAlignment="Top" Width="202" Click="Btn_Filese_Generation"/>
+        <Button Content="Exsel parsing" HorizontalAlignment="Left" Margin="533,88,0,0" VerticalAlignment="Top" Width="202" Click="Btn_Exsel_Parsing"/>
+        
+    </Grid>
+</Window>

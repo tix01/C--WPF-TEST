@@ -1,0 +1,28 @@
+﻿<Window x:Class="prot.ExcelParsing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Upload" HorizontalAlignment="Left" Margin="58,35,0,0" VerticalAlignment="Top" Width="131" Click="Upload_DB"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="588,35,0,0" VerticalAlignment="Top" Click="Load_DB" Width="105"/>
+
+        <Grid Margin="0,10,0,-10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!-- Auto-sized row for the button -->
+                <RowDefinition Height="*" />
+                <!-- Star-sized row for the DataGrid -->
+            </Grid.RowDefinitions>
+
+            <!-- Button at the top -->
+            <Button x:Name="closeTable" Content="CloseGrid" Click="Btn_Close" Visibility="Collapsed"/>
+
+            <!-- DataGrid filling the rest of the space -->
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" ItemsSource="{Binding AllDataItems}" Visibility="Collapsed" Grid.Row="1" />
+        </Grid>
+    </Grid>
+</Window>
